@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="modal-wrapper">
+      <div id="modal">
+        <div class="modal-header">
+          <h3>Editar</h3>
+          <button class="close-modal">X</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nameEdit">Nome</label>
+              <input type="text" id="nameEdit" name="nameEdit" />
+            </div>
+            <div class="form-group">
+              <label for="unitsEdit">Unidades</label>
+              <input type="number" id="unitsEdit" name="unitsEdit" />
+            </div>
+            <div class="form-group">
+              <label for="valueEdit">Valor</label>
+              <input type="bnumber" id="valueEdit" name="value" />
+            </div>
+            <div class="form-group">
+              <label for="total">Total</label>
+              <input type="number" id="totalEdit" name="total" />
+            </div>
+              <button type="button" id="save-edit">Salvar</button>
+              <button type="button" class="close-modal">Fechar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+      <input id="medicoes_previstas" type="hidden" hidden value="" />
+      <div>
+        <div>
+          <form class="horizontal-form" action="">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input id="name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="units">Unidades</label>
+              <input id="units" type="number" />
+            </div>
+            <div class="form-group">
+              <label for="value">Valor</label>
+              <input id="value" type="number" />
+            </div>
+            <div class="form-group">
+              <label for="total">Total</label>
+              <input id="total" type="number" />
+            </div>
+            <div class="button-group">
+              <button type="button" id="addItem">Add</button>
+              <button id="verifyData">Verify data</button>
+            </div>
+          </form>
+        </div>
+        <div id="itemsList"></div>
+      </div>
+    </div>
+    <script type="module" src="./script.js" />
+  </body>
+</html>
